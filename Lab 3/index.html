@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Gallery container -->
+    <div class="gallery-container">
+      <!-- Thumbnails will be dynamically inserted here -->
+    </div>
+
+    <!-- Lightbox  -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <!-- Full-size image -->
+        <img id="lightbox-img" src="" alt="" loading="lazy" />
+        <!-- Caption -->
+        <div id="lightbox-caption"></div>
+      </div>
+      <!-- Navigation buttons -->
+      <button id="prev-btn" class="nav-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="next-btn" class="nav-btn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <!-- Close button -->
+      <button id="close-btn" class="close-btn">&times;</button>
+    </div>
+
+    <!-- Link to script.js -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
