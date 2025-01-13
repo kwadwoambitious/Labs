@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>My To-Do List</h1>
+      <!-- Input Form for new to-do item -->
+      <div class="form">
+        <input type="text" id="title" placeholder="Title" required />
+        <input
+          type="text"
+          id="description"
+          placeholder="Description (optional)"
+        />
+        <input type="datetime-local" id="dueDate" required />
+        <button id="addBtn">Add Item</button>
+      </div>
+      <!-- Buttons for sorting -->
+      <div class="sorting-buttons">
+        <button id="sortAsc">Sort by Due Date (Ascending)</button>
+        <button id="sortDesc">Sort by Due Date (Descending)</button>
+      </div>
+    </div>
+
+    <!-- Container to hold the to-do list -->
+    <div>
+      <ul id="todoList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
